@@ -1,0 +1,1062 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rohit | Senior Full Stack Engineer & Technical Architect</title>
+  <meta name="description" content="Portfolio of Rohit, a Senior Full Stack Engineer & Architect with 8+ years experience building scalable web architectures, resilient microservices, and modern UI systems.">
+  
+  <!-- Modern Typography Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Scroll Progress Indicator -->
+  <div id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- Interactive Generative Canvas & Gradient Shapes Background -->
+  <div class="canvas-wrapper" aria-hidden="true">
+    <canvas id="ambient-canvas"></canvas>
+    <div class="gradient-shape shape-1"></div>
+    <div class="gradient-shape shape-2"></div>
+    <div class="gradient-shape shape-3"></div>
+    <div class="ambient-noise"></div>
+  </div>
+
+  <!-- Main Navigation -->
+  <header class="site-header" id="site-header">
+    <div class="nav-container">
+      <a href="#hero" class="brand-logo" aria-label="Rohit Portfolio Home">
+        <span class="logo-mark">R</span>
+        <span class="logo-text">Rohit<span class="accent-dot">.</span></span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="desktop-nav" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Group: Theme Toggle & Quick CTA -->
+      <div class="header-actions">
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle light or dark theme" title="Toggle theme">
+          <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2"></path>
+            <path d="M12 20v2"></path>
+            <path d="m4.93 4.93 1.41 1.41"></path>
+            <path d="m17.66 17.66 1.41 1.41"></path>
+            <path d="M2 12h2"></path>
+            <path d="M20 12h2"></path>
+            <path d="m6.34 17.66-1.41 1.41"></path>
+            <path d="m19.07 4.93-1.41 1.41"></path>
+          </svg>
+          <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+          </svg>
+        </button>
+
+        <a href="#contact" class="btn btn-primary btn-sm header-cta">
+          <span>Get in Touch</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+
+        <!-- Mobile Menu Toggle -->
+        <button id="mobile-toggle" class="mobile-toggle-btn" aria-label="Open menu" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown Menu -->
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+      <ul class="mobile-nav-list">
+        <li><a href="#about" class="mobile-nav-link">About</a></li>
+        <li><a href="#experience" class="mobile-nav-link">Experience</a></li>
+        <li><a href="#education" class="mobile-nav-link">Education</a></li>
+        <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+        <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+        <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+      </ul>
+      <div class="mobile-menu-footer">
+        <a href="#contact" class="btn btn-primary btn-block">Get in Touch</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Layout -->
+  <main id="main-content">
+    
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="container hero-container">
+        
+        <div class="hero-badge reveal">
+          <span class="status-pulse"></span>
+          <span class="badge-text">Available for Senior & Lead Engineering Roles</span>
+        </div>
+
+        <h1 class="hero-title reveal">
+          Hi, I'm <span class="text-gradient">Rohit</span>.<br>
+          <span class="hero-subtitle">Senior Full Stack Engineer & Architect.</span>
+        </h1>
+
+        <p class="hero-lead reveal">
+          Architecting resilient distributed systems, scalable full-stack web applications, and intuitive interfaces with high engineering standards. Passionate about clean code, performance optimization, and pragmatic technical leadership.
+        </p>
+
+        <!-- CTA & Quick Connect -->
+        <div class="hero-actions reveal">
+          <a href="#projects" class="btn btn-primary">
+            <span>Explore Projects</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <polyline points="19 12 12 19 5 12"></polyline>
+            </svg>
+          </a>
+          <a href="#experience" class="btn btn-secondary">
+            <span>View Experience</span>
+          </a>
+          <button class="btn btn-outline copy-email-btn" data-email="rohit.engineer@portfolio.dev">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect>
+              <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path>
+            </svg>
+            <span class="copy-text">Copy Email</span>
+          </button>
+        </div>
+
+        <!-- Metric Stat Cards (Matte, Precision Borders, Anti-Glassmorphism) -->
+        <div class="stats-grid reveal">
+          <div class="stat-card">
+            <span class="stat-number">8+</span>
+            <span class="stat-label">Years of Engineering Impact</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">2</span>
+            <span class="stat-label">Key Tech Companies (1 Current)</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">3</span>
+            <span class="stat-label">Academic Computing Degrees</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">99.9%</span>
+            <span class="stat-label">System Uptime Track Record</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Experience Summary & About Section -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <span class="section-tag">Overview</span>
+          <h2 class="section-title">Experience Summary</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-narrative reveal">
+            <p class="paragraph-lead">
+              I am a seasoned software engineer with a comprehensive background in full-lifecycle software delivery. My career bridges technical depth across backend distributed architectures and modern frontend engineering.
+            </p>
+            <p>
+              Throughout my tenure across high-growth product teams and enterprise platforms, I have focused on decoupling monolithic backends into resilient microservices, improving frontend Core Web Vitals, and implementing rigorous automated testing and CI/CD pipelines.
+            </p>
+            <p>
+              I believe in clean craftsmanship, maintainable documentation, and building systems that perform reliably under high traffic demands.
+            </p>
+
+            <div class="core-competencies">
+              <h4 class="competencies-title">Core Principles</h4>
+              <ul class="competencies-list">
+                <li><span class="bullet-check">✓</span> Scalable Microservices & Event-Driven Architecture</li>
+                <li><span class="bullet-check">✓</span> High-Performance, Accessible Responsive Frontend</li>
+                <li><span class="bullet-check">✓</span> Database Query Optimization & Caching Strategies</li>
+                <li><span class="bullet-check">✓</span> Engineering Mentorship, Code Reviews & CI/CD Hygiene</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="about-sidebar reveal">
+            <div class="profile-card">
+              <div class="profile-header">
+                <div class="avatar-box">
+                  <span class="avatar-initials">R</span>
+                </div>
+                <div class="profile-info">
+                  <h3 class="profile-name">Rohit</h3>
+                  <p class="profile-title">Senior Full Stack Engineer</p>
+                  <span class="profile-location">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                      <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                    Pune / Mumbai / Remote
+                  </span>
+                </div>
+              </div>
+
+              <div class="profile-meta-list">
+                <div class="meta-item">
+                  <span class="meta-label">Specialization</span>
+                  <span class="meta-value">Distributed Systems & Modern Web</span>
+                </div>
+                <div class="meta-item">
+                  <span class="meta-label">Primary Stack</span>
+                  <span class="meta-value">React, TypeScript, Node.js, AWS</span>
+                </div>
+                <div class="meta-item">
+                  <span class="meta-label">Work Authorization</span>
+                  <span class="meta-value">Full-time / Permanent / Contract</span>
+                </div>
+              </div>
+
+              <div class="profile-socials">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-chip" aria-label="GitHub Profile">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                  </svg>
+                  <span>GitHub</span>
+                </a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-chip" aria-label="LinkedIn Profile">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                  </svg>
+                  <span>LinkedIn</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Company Experience Section (2 Companies, 1 Current) -->
+    <section id="experience" class="section experience-section">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <span class="section-tag">Career Milestones</span>
+          <h2 class="section-title">Company Experience</h2>
+          <p class="section-subtitle">Demonstrated progression, system architecture responsibility, and proven engineering outcomes.</p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="timeline-container">
+          
+          <!-- Company 1: Current Company -->
+          <article class="timeline-item reveal active-role">
+            <div class="timeline-marker">
+              <div class="marker-dot"></div>
+              <div class="marker-line"></div>
+            </div>
+            
+            <div class="timeline-content card">
+              <div class="timeline-header">
+                <div class="company-role-block">
+                  <div class="badge-row">
+                    <span class="role-badge current-badge">
+                      <span class="pulse-point"></span> Current Role
+                    </span>
+                    <span class="tenure-badge">Jan 2021 — Present</span>
+                  </div>
+                  <h3 class="role-title">Lead Full Stack Engineer & System Architect</h3>
+                  <h4 class="company-name">TechCorp Enterprise Solutions</h4>
+                </div>
+              </div>
+
+              <p class="timeline-summary">
+                Leading the core architecture and development team for enterprise platform services. Responsible for end-to-end technical strategy, microservice decoupling, high-concurrency data flows, and establishing modern frontend design systems.
+              </p>
+
+              <div class="key-achievements">
+                <h5 class="achievements-title">Key Impact & Contributions:</h5>
+                <ul class="achievements-list">
+                  <li>
+                    <strong>Microservices Architecture:</strong> Architected and migrated monolithic backend services to distributed Node.js/TypeScript microservices on AWS, handling over 50M+ requests monthly with 99.99% availability.
+                  </li>
+                  <li>
+                    <strong>Frontend Modernization:</strong> Directed the transition of legacy portal interfaces to modular Next.js/React applications, improving Core Web Vitals (LCP by 45%, FID to sub-50ms).
+                  </li>
+                  <li>
+                    <strong>Database Optimization:</strong> Redesigned indexing schemas and implemented Redis caching tiers for PostgreSQL clusters, cutting average query response times from 320ms to 42ms.
+                  </li>
+                  <li>
+                    <strong>Team Mentorship:</strong> Mentored 12+ developers, instituted rigorous automated code quality gates, and cut deployment release cycles from bi-weekly to continuous daily deliveries.
+                  </li>
+                </ul>
+              </div>
+
+              <div class="tech-stack-pills">
+                <span class="tech-pill">React</span>
+                <span class="tech-pill">Next.js</span>
+                <span class="tech-pill">TypeScript</span>
+                <span class="tech-pill">Node.js</span>
+                <span class="tech-pill">AWS (ECS/Lambda)</span>
+                <span class="tech-pill">Docker</span>
+                <span class="tech-pill">PostgreSQL</span>
+                <span class="tech-pill">Redis</span>
+                <span class="tech-pill">GraphQL</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Company 2: Previous Company -->
+          <article class="timeline-item reveal">
+            <div class="timeline-marker">
+              <div class="marker-dot"></div>
+              <div class="marker-line"></div>
+            </div>
+            
+            <div class="timeline-content card">
+              <div class="timeline-header">
+                <div class="company-role-block">
+                  <div class="badge-row">
+                    <span class="role-badge previous-badge">Previous Company</span>
+                    <span class="tenure-badge">Aug 2018 — Dec 2020 · 2 yrs 5 mos</span>
+                  </div>
+                  <h3 class="role-title">Senior Software Engineer</h3>
+                  <h4 class="company-name">Innovatech Digital Systems</h4>
+                </div>
+              </div>
+
+              <p class="timeline-summary">
+                Contributed to the design, feature delivery, and performance engineering of multi-tenant B2B client applications and analytics dashboards across e-commerce and logistics domains.
+              </p>
+
+              <div class="key-achievements">
+                <h5 class="achievements-title">Key Impact & Contributions:</h5>
+                <ul class="achievements-list">
+                  <li>
+                    <strong>Full Stack Development:</strong> Engineered high-throughput RESTful APIs using Python/Flask and Node.js, servicing complex inventory reconciliation workflows.
+                  </li>
+                  <li>
+                    <strong>Interactive Data Portals:</strong> Built dynamic reporting interfaces with Vue.js and D3.js/Canvas, enabling stakeholders to visualize multi-variant operational metrics in real-time.
+                  </li>
+                  <li>
+                    <strong>Pipeline Automation:</strong> Configured Dockerized container workflows and GitLab CI/CD pipelines, automating integration tests and staging deployments.
+                  </li>
+                  <li>
+                    <strong>Performance & Security:</strong> Audited and hardened authentication pipelines with JWT/OAuth2 and mitigated OWASP vulnerabilities across critical checkout endpoints.
+                  </li>
+                </ul>
+              </div>
+
+              <div class="tech-stack-pills">
+                <span class="tech-pill">JavaScript (ES6+)</span>
+                <span class="tech-pill">Node.js</span>
+                <span class="tech-pill">Python</span>
+                <span class="tech-pill">Vue.js</span>
+                <span class="tech-pill">MongoDB</span>
+                <span class="tech-pill">MySQL</span>
+                <span class="tech-pill">REST APIs</span>
+                <span class="tech-pill">Docker</span>
+                <span class="tech-pill">Git</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Education Section (3 Parts: BCA, MCA, Diploma in Advanced Computing) -->
+    <section id="education" class="section education-section">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <span class="section-tag">Academic Pedigree</span>
+          <h2 class="section-title">Education & Credentials</h2>
+          <p class="section-subtitle">Structured three-tier academic foundation covering computing fundamentals, advanced systems, and specialized engineering.</p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="education-grid">
+          
+          <!-- Education 1: Diploma in Advanced Computing (CDAC) -->
+          <div class="education-card card reveal">
+            <div class="education-badge-top">
+              <span class="edu-type-badge specialized">Advanced Diploma</span>
+              <span class="edu-year">Post-Graduate</span>
+            </div>
+            
+            <div class="education-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+              </svg>
+            </div>
+
+            <h3 class="degree-title">Diploma in Advanced Computing (PG-DAC)</h3>
+            <h4 class="institution-name">Centre for Development of Advanced Computing (CDAC)</h4>
+            
+            <p class="degree-description">
+              Intensive, rigorous post-graduate engineering curriculum emphasizing systems software, distributed computing, database internals, and enterprise architecture.
+            </p>
+
+            <div class="coursework-block">
+              <span class="coursework-label">Key Competencies:</span>
+              <div class="coursework-tags">
+                <span class="tag">Systems Architecture</span>
+                <span class="tag">Advanced Algorithms</span>
+                <span class="tag">Enterprise Java / C++</span>
+                <span class="tag">OS Internals</span>
+                <span class="tag">Distributed Systems</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Education 2: MCA -->
+          <div class="education-card card reveal">
+            <div class="education-badge-top">
+              <span class="edu-type-badge masters">Master's Degree</span>
+              <span class="edu-year">Post-Graduation</span>
+            </div>
+            
+            <div class="education-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"></path>
+                <path d="M6 6h10"></path>
+                <path d="M6 10h10"></path>
+              </svg>
+            </div>
+
+            <h3 class="degree-title">Master of Computer Applications (MCA)</h3>
+            <h4 class="institution-name">University Department of Computer Science</h4>
+            
+            <p class="degree-description">
+              Advanced graduate program focusing on software engineering methodology, mathematical modeling, distributed database design, and network protocols.
+            </p>
+
+            <div class="coursework-block">
+              <span class="coursework-label">Key Competencies:</span>
+              <div class="coursework-tags">
+                <span class="tag">Software Engineering</span>
+                <span class="tag">Data Structures</span>
+                <span class="tag">RDBMS Design</span>
+                <span class="tag">Cloud Computing</span>
+                <span class="tag">Network Security</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Education 3: BCA -->
+          <div class="education-card card reveal">
+            <div class="education-badge-top">
+              <span class="edu-type-badge bachelors">Bachelor's Degree</span>
+              <span class="edu-year">Graduation</span>
+            </div>
+            
+            <div class="education-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect width="18" height="18" x="3" y="3" rx="2"></rect>
+                <path d="m9 8 6 4-6 4Z"></path>
+              </svg>
+            </div>
+
+            <h3 class="degree-title">Bachelor of Computer Applications (BCA)</h3>
+            <h4 class="institution-name">College of Computer Sciences</h4>
+            
+            <p class="degree-description">
+              Comprehensive undergraduate foundation establishing core computer science principles, algorithmic problem solving, web development, and database management.
+            </p>
+
+            <div class="coursework-block">
+              <span class="coursework-label">Key Competencies:</span>
+              <div class="coursework-tags">
+                <span class="tag">OOP Principles</span>
+                <span class="tag">C / C++ / Java</span>
+                <span class="tag">SQL & Relational DBs</span>
+                <span class="tag">Web Standards</span>
+                <span class="tag">Computer Networks</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Technical Skills Section -->
+    <section id="skills" class="section skills-section">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <span class="section-tag">Technical Proficiency</span>
+          <h2 class="section-title">Technical Skills & Tooling</h2>
+          <p class="section-subtitle">Pragmatic technologies mastered and applied daily in building production-grade enterprise software.</p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="skills-category-grid">
+          
+          <!-- Category 1: Frontend & UI -->
+          <div class="skill-category-card card reveal">
+            <div class="category-header">
+              <div class="category-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                  <polyline points="2 17 12 22 22 17"></polyline>
+                  <polyline points="2 12 12 17 22 12"></polyline>
+                </svg>
+              </div>
+              <h3 class="category-title">Frontend Architecture</h3>
+            </div>
+            <p class="category-summary">Responsive, accessible, and high-performance user interfaces.</p>
+            <div class="skills-pill-group">
+              <div class="skill-item">
+                <span class="skill-name">React / Next.js</span>
+                <span class="skill-level">Expert</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">TypeScript</span>
+                <span class="skill-level">Expert</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">JavaScript (ES6+)</span>
+                <span class="skill-level">Expert</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">HTML5 / Canvas / WebGL</span>
+                <span class="skill-level">Proficient</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Modern CSS / Tailwind</span>
+                <span class="skill-level">Expert</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">State Management (Redux/Zustand)</span>
+                <span class="skill-level">Expert</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Core Web Vitals & Perf</span>
+                <span class="skill-level">Advanced</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 2: Backend & Distributed -->
+          <div class="skill-category-card card reveal">
+            <div class="category-header">
+              <div class="category-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect width="20" height="8" x="2" y="2" rx="2" ry="2"></rect>
+                  <rect width="20" height="8" x="2" y="14" rx="2" ry="2"></rect>
+                  <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                  <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                </svg>
+              </div>
+              <h3 class="category-title">Backend & Microservices</h3>
+            </div>
+            <p class="category-summary">Fault-tolerant APIs, event-driven services, and scalable backends.</p>
+            <div class="skills-pill-group">
+              <div class="skill-item">
+                <span class="skill-name">Node.js / Express</span>
+                <span class="skill-level">Expert</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Python / FastAPI</span>
+                <span class="skill-level">Advanced</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">RESTful API Design</span>
+                <span class="skill-level">Expert</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">GraphQL Architectures</span>
+                <span class="skill-level">Advanced</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Event-Driven / WebSockets</span>
+                <span class="skill-level">Advanced</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Authentication (JWT, OAuth2)</span>
+                <span class="skill-level">Expert</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Microservices Decoupling</span>
+                <span class="skill-level">Advanced</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 3: Databases & Caching -->
+          <div class="skill-category-card card reveal">
+            <div class="category-header">
+              <div class="category-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                  <path d="M3 5V19A9 3 0 0 0 21 19V5"></path>
+                  <path d="M3 12A9 3 0 0 0 21 12"></path>
+                </svg>
+              </div>
+              <h3 class="category-title">Databases & Storage</h3>
+            </div>
+            <p class="category-summary">Relational schemas, NoSQL document stores, and high-speed caching.</p>
+            <div class="skills-pill-group">
+              <div class="skill-item">
+                <span class="skill-name">PostgreSQL</span>
+                <span class="skill-level">Expert</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">MongoDB</span>
+                <span class="skill-level">Advanced</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Redis (Cache & Queues)</span>
+                <span class="skill-level">Advanced</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">MySQL</span>
+                <span class="skill-level">Advanced</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Query Optimization & Indexing</span>
+                <span class="skill-level">Expert</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Database Migrations (Prisma/Knex)</span>
+                <span class="skill-level">Advanced</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 4: DevOps & Cloud -->
+          <div class="skill-category-card card reveal">
+            <div class="category-header">
+              <div class="category-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"></path>
+                </svg>
+              </div>
+              <h3 class="category-title">Cloud, DevOps & Tools</h3>
+            </div>
+            <p class="category-summary">Automated pipelines, containerization, and reliable infrastructure.</p>
+            <div class="skills-pill-group">
+              <div class="skill-item">
+                <span class="skill-name">AWS (S3, EC2, ECS, Lambda)</span>
+                <span class="skill-level">Advanced</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Docker & Containerization</span>
+                <span class="skill-level">Advanced</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">CI/CD (GitHub Actions / GitLab)</span>
+                <span class="skill-level">Advanced</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Git & Trunk-Based Dev</span>
+                <span class="skill-level">Expert</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Vite / Webpack / Tooling</span>
+                <span class="skill-level">Expert</span>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Linux / Bash Scripting</span>
+                <span class="skill-level">Proficient</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <span class="section-tag">Engineered Solutions</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-subtitle">Real-world systems, architectural case studies, and engineering deliveries.</p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="projects-grid">
+          
+          <!-- Project 1 -->
+          <article class="project-card card reveal">
+            <div class="project-header">
+              <div class="project-category-tag">Cloud & Observability</div>
+              <div class="project-actions-top">
+                <span class="badge-status-dot active"></span> Production
+              </div>
+            </div>
+
+            <h3 class="project-title">CloudPulse — Real-Time Distributed Telemetry Engine</h3>
+            
+            <p class="project-description">
+              A high-throughput distributed observability platform that ingests real-time operational logs and metrics from 100+ microservice containers. Delivers sub-100ms alerting, anomaly threshold detection, and interactive live dashboards.
+            </p>
+
+            <div class="project-highlights">
+              <div class="highlight-item">
+                <span class="highlight-key">Scale:</span> Ingests 15k+ events/sec with sub-second WebSocket sync.
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-key">Architecture:</span> Decoupled ingestion gateway backed by Redis queues.
+              </div>
+            </div>
+
+            <div class="project-tech-tags">
+              <span class="tag">TypeScript</span>
+              <span class="tag">React</span>
+              <span class="tag">Node.js</span>
+              <span class="tag">WebSockets</span>
+              <span class="tag">Redis</span>
+              <span class="tag">Docker</span>
+            </div>
+
+            <div class="project-footer-links">
+              <button class="project-modal-trigger btn btn-text" data-project="cloudpulse">
+                <span>View Architecture Specs</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </button>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card card reveal">
+            <div class="project-header">
+              <div class="project-category-tag">Enterprise Commerce</div>
+              <div class="project-actions-top">
+                <span class="badge-status-dot active"></span> Enterprise
+              </div>
+            </div>
+
+            <h3 class="project-title">ApexCommerce — High-Concurrency Headless Platform</h3>
+            
+            <p class="project-description">
+              Modular headless commerce infrastructure supporting multi-currency transactions, dynamic pricing rules, and atomic distributed inventory reservations to prevent overbooking during high-traffic flash sales.
+            </p>
+
+            <div class="project-highlights">
+              <div class="highlight-item">
+                <span class="highlight-key">Reliability:</span> Zero race-condition double bookings via PostgreSQL row locking.
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-key">Performance:</span> Next.js edge caching rendered product pages under 120ms.
+              </div>
+            </div>
+
+            <div class="project-tech-tags">
+              <span class="tag">Next.js</span>
+              <span class="tag">TypeScript</span>
+              <span class="tag">GraphQL</span>
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">Tailwind CSS</span>
+              <span class="tag">AWS S3</span>
+            </div>
+
+            <div class="project-footer-links">
+              <button class="project-modal-trigger btn btn-text" data-project="apexcommerce">
+                <span>View Architecture Specs</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </button>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card card reveal">
+            <div class="project-header">
+              <div class="project-category-tag">Workflow Automation</div>
+              <div class="project-actions-top">
+                <span class="badge-status-dot active"></span> Open Architecture
+              </div>
+            </div>
+
+            <h3 class="project-title">OmniFlow — Declarative Pipeline & API Orchestrator</h3>
+            
+            <p class="project-description">
+              A visual node-based workflow builder enabling engineering teams to chain heterogeneous REST/GraphQL endpoints, execute data transformation scripts, and trigger automated webhook dispatches with automatic retry logic.
+            </p>
+
+            <div class="project-highlights">
+              <div class="highlight-item">
+                <span class="highlight-key">Resilience:</span> Exponential backoff retries with dead-letter queue recovery.
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-key">UI Engine:</span> Interactive SVG/Canvas node canvas with zoom/pan capabilities.
+              </div>
+            </div>
+
+            <div class="project-tech-tags">
+              <span class="tag">React</span>
+              <span class="tag">Python</span>
+              <span class="tag">FastAPI</span>
+              <span class="tag">RabbitMQ</span>
+              <span class="tag">Docker</span>
+              <span class="tag">Jest</span>
+            </div>
+
+            <div class="project-footer-links">
+              <button class="project-modal-trigger btn btn-text" data-project="omniflow">
+                <span>View Architecture Specs</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </button>
+            </div>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="project-card card reveal">
+            <div class="project-header">
+              <div class="project-category-tag">Data Graphics & Canvas</div>
+              <div class="project-actions-top">
+                <span class="badge-status-dot active"></span> Interactive
+              </div>
+            </div>
+
+            <h3 class="project-title">VectorGraph — 60 FPS Canvas Data Topology Visualizer</h3>
+            
+            <p class="project-description">
+              A high-performance hardware-accelerated HTML5 Canvas visualization library capable of rendering, clustering, and navigating 50,000+ interconnected dependency nodes without frame degradation or main-thread locking.
+            </p>
+
+            <div class="project-highlights">
+              <div class="highlight-item">
+                <span class="highlight-key">Efficiency:</span> Quadtree spatial indexing for instant cursor collision queries.
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-key">Theme Aware:</span> Dynamic color-token shifting supporting dark/light contrast modes.
+              </div>
+            </div>
+
+            <div class="project-tech-tags">
+              <span class="tag">HTML5 Canvas</span>
+              <span class="tag">WebGL</span>
+              <span class="tag">TypeScript</span>
+              <span class="tag">Web Workers</span>
+              <span class="tag">Algorithms</span>
+            </div>
+
+            <div class="project-footer-links">
+              <button class="project-modal-trigger btn btn-text" data-project="vectorgraph">
+                <span>View Architecture Specs</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </button>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <span class="section-tag">Initiate Collaboration</span>
+          <h2 class="section-title">Get in Touch</h2>
+          <p class="section-subtitle">Interested in senior engineering leadership, architecture consulting, or full-time opportunities? Let's connect.</p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Contact Info & Quick Actions -->
+          <div class="contact-info-col reveal">
+            <h3 class="contact-card-title">Contact Coordinates</h3>
+            <p class="contact-intro">
+              Whether you are scaling a distributed platform or need a dedicated senior full-stack engineer to lead technical initiatives, feel free to reach out directly.
+            </p>
+
+            <div class="contact-methods">
+              
+              <div class="contact-method-item">
+                <div class="method-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                  </svg>
+                </div>
+                <div class="method-details">
+                  <span class="method-label">Direct Email</span>
+                  <div class="method-action-row">
+                    <span class="method-value" id="email-text">rohit.engineer@portfolio.dev</span>
+                    <button class="copy-icon-btn copy-email-btn" data-email="rohit.engineer@portfolio.dev" title="Copy email address" aria-label="Copy email">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect>
+                        <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="contact-method-item">
+                <div class="method-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <div class="method-details">
+                  <span class="method-label">Location</span>
+                  <span class="method-value">Pune / Mumbai, India (Available for Global Remote)</span>
+                </div>
+              </div>
+
+              <div class="contact-method-item">
+                <div class="method-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                </div>
+                <div class="method-details">
+                  <span class="method-label">Response Time</span>
+                  <span class="method-value">Within 24 Hours</span>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="professional-links-row">
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="link-badge">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                </svg>
+                <span>LinkedIn Profile</span>
+              </a>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="link-badge">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+                <span>GitHub Repository</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Interactive Message Form -->
+          <div class="contact-form-col card reveal">
+            <h3 class="form-title">Send a Direct Message</h3>
+            <form id="contact-form" class="contact-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="form-name" class="form-label">Full Name</label>
+                  <input type="text" id="form-name" name="name" class="form-input" placeholder="e.g. Alex Morgan" required>
+                  <span class="field-error" id="name-error"></span>
+                </div>
+                <div class="form-group">
+                  <label for="form-email" class="form-label">Email Address</label>
+                  <input type="email" id="form-email" name="email" class="form-input" placeholder="alex@company.com" required>
+                  <span class="field-error" id="email-error"></span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="form-subject" class="form-label">Subject</label>
+                <input type="text" id="form-subject" name="subject" class="form-input" placeholder="Senior Role Opportunity / Project Discussion" required>
+                <span class="field-error" id="subject-error"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="form-message" class="form-label">Message</label>
+                <textarea id="form-message" name="message" class="form-textarea" rows="4" placeholder="Briefly describe your team, architecture needs, or project scope..." required></textarea>
+                <span class="field-error" id="message-error"></span>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block submit-btn" id="submit-btn">
+                <span>Send Message</span>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+
+              <div class="form-status-msg" id="form-status-msg" aria-live="polite"></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Project Details Modal (Pure semantic dialog) -->
+  <dialog id="project-modal" class="project-modal" aria-labelledby="modal-project-title">
+    <div class="modal-inner">
+      <button id="modal-close-btn" class="modal-close-btn" aria-label="Close project modal">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+      <div id="modal-content-body">
+        <!-- Injected dynamically via app.js -->
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Toast Notification for Copy / Actions -->
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <span class="footer-brand">Rohit<span class="accent-dot">.</span></span>
+        <span class="footer-tagline">Senior Full Stack Engineer & System Architect</span>
+      </div>
+      <div class="footer-center">
+        <p class="footer-copy">Crafted with precision & modern web standards. Zero AI clichés.</p>
+      </div>
+      <div class="footer-right">
+        <a href="#hero" class="back-to-top" aria-label="Back to top">
+          <span>Back to Top</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="12" y1="19" x2="12" y2="5"></line>
+            <polyline points="5 12 12 5 19 12"></polyline>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="canvas.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
